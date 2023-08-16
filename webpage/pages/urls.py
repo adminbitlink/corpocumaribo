@@ -3,7 +3,10 @@ from . import views
 app_name = 'pages'
 urlpatterns = [
     path('', views.index, name='index'),
-    path('services/', views.services, name='services'),
-    path('contact/', views.contact, name='contact'),
-    path('about-us/', views.about_us, name='about_us'),
+    path('service.html', views.service, name='service'),
+    path('contact.html', views.contact, name='contact'),
+    path('about.html', views.about, name='Nosotros'),
+    path('blog.html', views.blog, name='blog'),
+    path('single.html', views.single, name='single'),
+    path('project.html', views.project, name='project'),
 ]
